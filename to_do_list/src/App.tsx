@@ -34,6 +34,12 @@ const TodoApp: React.FC = () => {
     else alert('Enter Task');
   };
 
+  const editedTask = (event: React.FormEvent<HTMLTableCellElement>, taskId:number) => {
+    setTasks(tasks.map(task => 
+      task.id === taskId ? { ...task, text: event.currentTarget.innerHTML} : task
+    ));
+  }
+
   const toggleTaskCompletion = (taskId: number) => {
     setTasks(tasks.map(task => 
       task.id === taskId ? { ...task, completed: !task.completed } : task
@@ -50,8 +56,6 @@ const TodoApp: React.FC = () => {
     else if (filters === 'Incomplete') return !task.completed;
     return true;
   });
-
-  if (!filters) setDisplay('none');
 
   return (
     <div className='container'>
@@ -76,10 +80,11 @@ const TodoApp: React.FC = () => {
           </thead>
           <tbody>
             {
-              filterTasks.map((task, index) => (
+              filterTasks.length > 0 ? (filterTasks.map((task, index) => (
                 <tr key={task.id}>
                   <td>{index+1}</td>
-                  <td>
+                  <td contentEditable='true'
+                      onInput={(event) => editedTask(event, task.id)}>
                     {task.text}
                   </td>
                   <td>
@@ -91,8 +96,12 @@ const TodoApp: React.FC = () => {
                   <td>
                     <button className='delete-btn' onClick={() => deleteTask(task.id)}><DeleteIcon /></button>
                   </td>
-                </tr>))
-            }
+                </tr>))) : (
+                  <tr>
+                    <td colSpan={4}><p> No Data !</p></td>
+                  </tr>)
+                  
+            } 
           </tbody>
         </table><br/>
       </div>

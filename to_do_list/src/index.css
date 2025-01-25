@@ -45,6 +45,11 @@ input, button {
   box-sizing: border-box;
 }
 
+p {
+  padding: 6px;
+  margin: 5px;
+}
+
 button {
   padding: 8px;
   background: #142ef1c8;
@@ -63,7 +68,6 @@ table {
 input[type="checkbox"] {
   width: 20px;
   height: 20px;
-  accent-color: #4caf50;
 }
 
 .delete-btn {
@@ -74,8 +78,4 @@ input[type="checkbox"] {
 
 .delete-btn:hover {
   background-color: red;
-}
-
-table thead tbody:empty::before {
-  visibility: hidden;
 }
