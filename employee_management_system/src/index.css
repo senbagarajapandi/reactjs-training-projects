@@ -1,0 +1,158 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f7f6;
+  color: #333;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  height: 70vh;
+  background-color: white;
+  border-radius: 5px;
+  margin: 50px 150px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.divider {
+  background-color: #ccc;
+  height: 100%;
+  width: 5px;
+}
+
+.left {
+  padding: 20px;
+  width: 35%;
+  justify-items: center;
+  align-items: left;
+}
+
+.right {
+  padding: 20px;
+  width: 100%;
+  align-items: center;
+  justify-items: center;
+}
+
+.search-container {
+  width: 30%;
+  align-items: center;
+  justify-content: center;
+}
+
+.search-bar {
+  margin-left: 20px;
+}
+
+h1 {
+  text-align: center;
+  font-size: 2rem;
+  margin: 20px 0px;
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+input[type="text"] {
+  padding: 10px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+button {
+  padding: 10px;
+  background-color: #4A90E2;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+button:hover {
+  background-color: #357ABD;
+}
+
+p {
+  font-size: 1rem;
+  color: #666;
+  margin: 10px 0;
+}
+
+.active {
+  width: 100%;
+  padding: 0;
+  display: flex;
+  height: 50vh;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.hidden {
+  display: none;
+}
+
+table {
+  text-align: center;
+  padding: 15px;
+}
+
+td, th {
+  padding: 10px 20px;
+}
+
+th:last-child {
+  display: none;
+}
+
+td:nth-child(2) {
+  border: none;
+}
+
+td button {
+  margin: 10px;
+}
+
+.previous, .next {
+  margin: 3px;
+}
+td button, .previous, .next {
+  padding: 6px;
+  background-color: #4A90E2;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 13px;
+}
