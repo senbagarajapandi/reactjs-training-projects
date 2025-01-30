@@ -1,0 +1,144 @@
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f4f4f9;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.base-container {
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+
+h1 {
+  text-align: center;
+  font-size: 2.5rem;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+h2 {
+  color: #333;
+  font-size: 1.8rem;
+  margin: 5px 0;
+  text-align: center;
+}
+
+a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+li {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.blog-name {
+  width:80%;
+}
+
+.empty {
+  justify-content: center;
+}
+
+li a, li p {
+  font-size: 1.2rem;
+  color: #007bff;
+  cursor: pointer;
+  padding: 2px 3px;
+}
+
+li p:hover {
+  text-decoration: underline
+}
+
+form {
+  width: 500px;
+  display: table;
+  table-layout: fixed;
+  padding: 20px;
+}
+
+label {
+  display: table-cell; 
+  width: 120px; 
+  font-size: 14px;
+  font-weight: bold;
+  padding-right: 20px; 
+  color: #333;
+  vertical-align: middle; 
+}
+
+input[type="text"], textarea {
+  display: table-cell; 
+  margin-bottom: 20px;
+  padding: 8px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  outline: none;
+  width: 100%; 
+  box-sizing: border-box; 
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+input[type="text"]:focus, textarea:focus {
+  border-color: #4A90E2;
+  box-shadow: 0 0 5px rgba(74, 144, 226, 0.5);
+}
+
+button {
+  display: block;
+  margin: 20px auto 0;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  font-size: 1rem;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+button:disabled {
+  background-color: #e0e0e0;
+  cursor: not-allowed;
+}
+
+h2, form, ul {
+  padding: 10px;
+}
+
+.post-content {
+  padding: 20px;
+}
+
+.post-content h2 {
+  font-size: 2rem;
+  margin-bottom: 15px;
+}
+
+.post-content p {
+  font-size: 1.2rem;
+  line-height: 1.6;
+  color: #555;
+}
