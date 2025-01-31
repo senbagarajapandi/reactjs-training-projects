@@ -33,7 +33,7 @@ body {
 }
 
 .right {
-  padding: 20px;
+  padding: 10px;
   width: 100%;
   align-items: center;
   justify-items: center;
@@ -50,13 +50,17 @@ h2 {
   margin-bottom: 20px;
 }
 
+h3 {
+  margin-top: 20px;
+}
+
 form {
   display: flex;
   flex-direction: column;
   gap: 15px;
 }
 
-input, select {
+input, textarea {
   padding: 10px;
   font-size: 1rem;
   border: 1px solid #ccc;
@@ -69,19 +73,8 @@ input, select {
   width: 60%;
 }
 
-.sort {
-  padding: 3px;
-  font-size: 1rem;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  width: 17%;
-  box-sizing: border-box;
-  margin-right: 10px;
-  margin-bottom: 10px;
-}
-
 button {
-  padding: 10px;
+  padding: 5px;
   background-color: #4A90E2;
   color: white;
   border: none;
@@ -112,32 +105,4 @@ p {
 
 .hidden {
   display: none;
-}
-
-table {
-  text-align: center;
-  padding: 15px;
-}
-
-td, th {
-  padding: 10px 30px;
-}
-
-th:last-child {
-  display: none;
-}
-
-td:nth-child(2) {
-  border: none;
-}
-
-td button, .previous, .next {
-  margin: 10px;
-  padding: 6px;
-  background-color: #4A90E2;
-  color: white;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  font-size: 13px;
 }

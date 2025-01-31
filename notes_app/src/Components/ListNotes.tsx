@@ -16,7 +16,7 @@ const NoteList: React.FC = () => {
 
   return (
     <div className='container'>
-        <NoteForm noteToEdit={noteToEdit} />
+        <NoteForm noteToEdit={noteToEdit} setNoteToEdit={setNoteToEdit}/>
         <div className='divider'></div>
         <div id="list-notes">
           <div className='search-container'>

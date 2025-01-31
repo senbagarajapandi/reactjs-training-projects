@@ -2,9 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { useNotes } from './NotesContext';
 import { NoteFormProps } from './interfaces';
 
-
-const NoteForm: React.FC<NoteFormProps> = ({ noteToEdit }) => {
-  console.log(noteToEdit);
+const NoteForm: React.FC<NoteFormProps> = ({ noteToEdit, setNoteToEdit }) => {
   const { addNote, editNote } = useNotes();
   const [title, setTitle] = useState(noteToEdit?.title || '');
   const [content, setContent] = useState(noteToEdit?.content || '');
@@ -20,6 +18,7 @@ const NoteForm: React.FC<NoteFormProps> = ({ noteToEdit }) => {
     e.preventDefault();
     if (noteToEdit) {
       editNote(noteToEdit.id, { id: noteToEdit.id, title, content });
+      setNoteToEdit?.(undefined);
     } else {
       addNote({ id: new Date().toISOString(), title, content });
     }

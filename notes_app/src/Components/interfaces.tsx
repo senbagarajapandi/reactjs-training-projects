@@ -14,4 +14,5 @@ export interface NotesContextType {
 
 export interface NoteFormProps {
     noteToEdit?: Note;
+    setNoteToEdit?: (note: Note | undefined) => void
 };
